@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kali <kali@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/19 14:52:29 by anurtiag          #+#    #+#             */
-/*   Updated: 2024/06/19 12:21:53 by kali             ###   ########.fr       */
+/*   Created: 2024/06/19 12:28:00 by kali              #+#    #+#             */
+/*   Updated: 2024/06/19 13:06:19 by kali             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
 
-int main()
+# include <iostream>
+# include <string>
+# include "ClapTrap.hpp"
+
+class ScavTrap: public ClapTrap
 {
-    ClapTrap a;
-    ClapTrap b("putuka");
-    
-    for(int i = 0; i < 20; i++)
-        a.attack("putuka");
-    b.takeDamage(0);
-    return(0);
-}
+    private:
+        int garbanzo;
+    public:
+        ScavTrap();
+};
+
+
+#endif

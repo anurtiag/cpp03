@@ -6,7 +6,7 @@
 /*   By: kali <kali@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 14:52:32 by anurtiag          #+#    #+#             */
-/*   Updated: 2024/06/19 12:15:54 by kali             ###   ########.fr       */
+/*   Updated: 2024/06/19 13:58:08 by kali             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ ClapTrap::ClapTrap()
 
 ClapTrap::ClapTrap(std::string name)
 {
-    std::cout << "Default constructor called" << std::endl;
+    std::cout << "Name assigment constructor called" << std::endl;
     this->name = name;
     this->Attack_damage = 0;
     this->Hit_points = 10;

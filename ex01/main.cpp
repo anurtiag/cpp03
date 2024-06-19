@@ -6,19 +6,16 @@
 /*   By: kali <kali@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 14:52:29 by anurtiag          #+#    #+#             */
-/*   Updated: 2024/06/19 12:21:53 by kali             ###   ########.fr       */
+/*   Updated: 2024/06/19 13:59:35 by kali             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+#include "ScavTrap.cpp"
 
 int main()
 {
-    ClapTrap a;
-    ClapTrap b("putuka");
-    
-    for(int i = 0; i < 20; i++)
-        a.attack("putuka");
-    b.takeDamage(0);
+    ScavTrap a;
+    a.attack("putuka");
     return(0);
 }

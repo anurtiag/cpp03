@@ -6,14 +6,14 @@
 #    By: kali <kali@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/19 14:51:52 by anurtiag          #+#    #+#              #
-#    Updated: 2024/06/19 12:16:29 by kali             ###   ########.fr        #
+#    Updated: 2024/06/19 14:00:25 by kali             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	fixed_point
 
 
-SRCS			=	main.cpp ClapTrap.cpp
+SRCS			=	main.cpp ClapTrap.cpp ScavTrap.cpp
 
 OBJ				=	$(SRCS:.cpp=.o)
 
