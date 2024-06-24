@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anurtiag <anurtiag@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kali <kali@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 14:52:29 by anurtiag          #+#    #+#             */
-/*   Updated: 2024/06/24 16:02:55 by anurtiag         ###   ########.fr       */
+/*   Updated: 2024/06/24 12:32:25 by kali             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {
-    DiamondTrap b;
+    DiamondTrap b("boniato");
     // DiamondTrap a(b);
     // DiamondTrap c;
     // c = b;
