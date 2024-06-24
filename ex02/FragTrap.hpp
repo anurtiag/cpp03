@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anurtiag <anurtiag@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/19 14:52:29 by anurtiag          #+#    #+#             */
-/*   Updated: 2024/06/20 15:50:03 by anurtiag         ###   ########.fr       */
+/*   Created: 2024/06/20 16:06:58 by anurtiag          #+#    #+#             */
+/*   Updated: 2024/06/20 16:11:50 by anurtiag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
-int main()
+# include "ClapTrap.hpp"
+
+class FragTrap: public ClapTrap
 {
-    ScavTrap a;
-    ScavTrap b("boniato");
-    ScavTrap c;
-    c = b;
-    std::cout << "hi my name is " << c.get_name();
-    // a.attack("putuka");
-    // a.guardGate();
-    return(0);
-}
+    private:
+
+    public:
+        FragTrap();
+        FragTrap(std::string name);
+        FragTrap(const FragTrap &source);
+        FragTrap operator=(const FragTrap &source);
+        ~FragTrap();
+        void highFives();
+};
+
+
+#endif

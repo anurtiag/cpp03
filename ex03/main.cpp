@@ -6,21 +6,24 @@
 /*   By: anurtiag <anurtiag@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 14:52:29 by anurtiag          #+#    #+#             */
-/*   Updated: 2024/06/20 15:50:03 by anurtiag         ###   ########.fr       */
+/*   Updated: 2024/06/24 16:02:55 by anurtiag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main()
 {
-    ScavTrap a;
-    ScavTrap b("boniato");
-    ScavTrap c;
-    c = b;
-    std::cout << "hi my name is " << c.get_name();
-    // a.attack("putuka");
-    // a.guardGate();
+    DiamondTrap b;
+    // DiamondTrap a(b);
+    // DiamondTrap c;
+    // c = b;
+    b.whoAmI();
+    b.get_energy();
+    b.get_health();
+    b.get_attack();
+    // b.attack("patata");
+    // b.takeDamage(30);
+    // a(b);
     return(0);
 }

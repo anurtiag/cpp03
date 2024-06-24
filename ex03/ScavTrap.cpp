@@ -6,7 +6,7 @@
 /*   By: anurtiag <anurtiag@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 12:27:57 by kali              #+#    #+#             */
-/*   Updated: 2024/06/20 16:15:31 by anurtiag         ###   ########.fr       */
+/*   Updated: 2024/06/20 16:13:20 by anurtiag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,6 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
     this->Hit_points = 100;
 }
 
-void    ScavTrap::guardGate()
-{
-    std::cout << "ScavTrap " << this->name << " is now on gate Keeper mode!" << std::endl;
-}
-
 ScavTrap::~ScavTrap()
 {
     std::cout << "ScavTrap destructor called" << std::endl;
@@ -44,7 +39,7 @@ ScavTrap::ScavTrap(const ScavTrap &source) : ClapTrap(source)
     this->Attack_damage = source.Attack_damage;
     this->Energy_points = source.Energy_points;
     this->Hit_points = source.Hit_points;
-    this->name = source.name;
+    this->name = "source.name";
 }
 
 ScavTrap ScavTrap::operator=(const ScavTrap &source)
@@ -55,4 +50,9 @@ ScavTrap ScavTrap::operator=(const ScavTrap &source)
     this->Hit_points = source.Hit_points;
     this->name = source.name;
     return(*this);
+}
+
+void    ScavTrap::guardGate()
+{
+    std::cout << "ScavTrap " << this->name << " is now on gate Keeper mode!" << std::endl;
 }

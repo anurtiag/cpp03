@@ -6,7 +6,7 @@
 /*   By: anurtiag <anurtiag@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 14:52:32 by anurtiag          #+#    #+#             */
-/*   Updated: 2024/06/20 15:41:22 by anurtiag         ###   ########.fr       */
+/*   Updated: 2024/06/24 14:47:51 by anurtiag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,19 @@ void ClapTrap::beRepaired(unsigned int amount)
     }
     else
         std::cout << "No energy to do the action :(" << std::endl;
+}
+
+void ClapTrap::get_attack()
+{
+    std::cout << "The attack is " << this->Attack_damage << std::endl;
+}
+void ClapTrap::get_energy()
+{
+    std::cout << "The energy is " << this->Energy_points << std::endl;
+}
+void ClapTrap::get_health()
+{
+    std::cout << "The health is " << this->Hit_points << std::endl;
 }
 
 std::string ClapTrap::get_name()
